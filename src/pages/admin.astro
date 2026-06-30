@@ -1,0 +1,13 @@
+---
+import Base from "../layouts/Base.astro";
+import Admin from "../components/Admin.jsx";
+---
+<Base title="Curator · The Pit Archive">
+  <header class="masthead">
+    <span class="eyebrow">curator</span>
+    <h1 class="title" style="font-size:clamp(40px,8vw,84px)">BACK OF HOUSE</h1>
+    <div class="mast-rule"></div>
+  </header>
+
+  <Admin client:only="react" />
+</Base>

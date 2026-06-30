@@ -1,0 +1,21 @@
+---
+import Base from "../layouts/Base.astro";
+import Gallery from "../components/Gallery.jsx";
+---
+<Base title="The Pit Archive">
+  <header class="masthead">
+    <div class="mast-top">
+      <span class="eyebrow">est. in the pit · personal archive</span>
+    </div>
+    <h1 class="title">THE PIT ARCHIVE</h1>
+    <div class="mast-rule"></div>
+    <p class="sub">Memorabilia &amp; live shots — pulled from the floor, the merch table, and the crates.</p>
+  </header>
+
+  <Gallery client:load />
+
+  <footer class="foot">
+    <span>The Pit Archive</span>
+    <span>Curated by hand</span>
+  </footer>
+</Base>
